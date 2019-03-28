@@ -34,8 +34,8 @@
     "@types/styled-components": "^4.1.12",
     "microbundle": "^0.11.0",
     "prettier": "^1.16.4",
-    "react": "^16.8.5",
-    "react-dom": "^16.8.5"
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
   },
   "peerDependencies": {
     "react": "^16.8.5",
