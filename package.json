@@ -5,7 +5,6 @@
   "description": "React and typescript library starter kit",
   "main": "dist/index.js",
   "umd:main": "dist/index.umd.js",
-  "module": "dist/index.mjs",
   "source": "src/index.ts",
   "types": "dist/index.d.ts",
   "repository": {
@@ -22,23 +21,24 @@
     "library"
   ],
   "scripts": {
-    "build": "microbundle --jsx react --external all",
-    "dev": "microbundle watch --jsx react",
+    "build": "microbundle --jsx react --globals react=React,styled-components=styled --format cjs",
+    "dev": "microbundle watch --jsx react --globals react=React,styled-components=styled --format cjs",
     "format": "prettier --write \"**/*.{tsx,ts,css,scss,md,js,json,html}\""
   },
+  "dependencies": {
+    "styled-components": "^4.2.0"
+  },
   "devDependencies": {
-    "@types/react": "^16.8.8",
+    "@types/react": "^16.8.10",
     "@types/react-dom": "^16.8.3",
     "@types/styled-components": "^4.1.12",
     "microbundle": "^0.11.0",
     "prettier": "^1.16.4",
     "react": "^16.8.5",
-    "react-dom": "^16.8.5",
-    "styled-components": "^4.2.0"
+    "react-dom": "^16.8.5"
   },
   "peerDependencies": {
     "react": "^16.8.5",
-    "react-dom": "^16.8.5",
-    "styled-components": "^4.2.0"
+    "react-dom": "^16.8.5"
   }
 }
