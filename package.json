@@ -23,6 +23,8 @@
   "scripts": {
     "build": "microbundle --jsx react --globals react=React,styled-components=styled --format cjs",
     "dev": "microbundle watch --jsx react --globals react=React,styled-components=styled --format cjs",
+    "docz:dev": "docz dev",
+    "docz:build": "docz build",
     "format": "prettier --write \"**/*.{tsx,ts,css,scss,md,js,json,html}\""
   },
   "dependencies": {
@@ -32,13 +34,15 @@
     "@types/react": "^16.8.10",
     "@types/react-dom": "^16.8.3",
     "@types/styled-components": "^4.1.12",
+    "docz": "^1.0.0-rc.7",
+    "docz-theme-default": "^1.0.0-rc.7",
     "microbundle": "^0.11.0",
     "prettier": "^1.16.4",
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
   },
   "peerDependencies": {
-    "react": "^16.8.5",
-    "react-dom": "^16.8.5"
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
   }
 }

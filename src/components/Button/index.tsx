@@ -7,5 +7,5 @@ interface ButtonProps {
 }
 
 export function Button({ text }: ButtonProps) {
-  return <StyledButton>Button</StyledButton>
+  return <StyledButton>{text}</StyledButton>
 }
